@@ -1,0 +1,26 @@
+// {
+// 	"title": "",
+// 	"miniTitle": "",
+// 	"price": "",
+// 	"oldPrice": "",
+// 	"sale": "",
+// 	"link": "",
+// 	"imgProduct": "img/image-product/",
+// 	"stock": true,
+// 	"images": ["img/image-product/welding-machine/1.webp"],
+// 	"imagesLenta": [
+// 		"img/image-product/welding-machine/1.gif"
+// 	],
+// 	"id": 10,
+// 	"description": "",
+// 	"countReviews": 112,
+// 	"characteristic": [	],
+// 	"reviews": [
+// 		{
+// 			"rating": "5.0",
+// 			"name": "",
+// 			"imgPeople": "",
+// 			"text": ""
+// 		}
+// 	]
+// },
