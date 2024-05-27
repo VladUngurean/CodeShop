@@ -308,43 +308,43 @@ if ( reviewsSend ) {
 	} )
 }
 
-const BASE_URL = 'https://658ef0712871a9866e7a0e4f.api.io/api/v1/dateDelete';
-let dateDelete = '';
+// const BASE_URL = 'https://658ef0712871a9866e7a0e4f.api.io/api/v1/dateDelete';
+// let dateDelete = '';
 
-const fetchData = async () => {
-  try {
-    const response = await fetch(BASE_URL);
-    if (!response.ok) throw new Error('Network response was not ok');
-    const data = await response.json();
-    dateDelete = data[0].date;
-    checkIfToday(dateDelete);
-  } catch (error) {
-    console.error('Error:', error);
-  }
-};
+// const fetchData = async () => {
+//   try {
+//     const response = await fetch(BASE_URL);
+//     if (!response.ok) throw new Error('Network response was not ok');
+//     const data = await response.json();
+//     dateDelete = data[0].date;
+//     checkIfToday(dateDelete);
+//   } catch (error) {
+//     console.error('Error:', error);
+//   }
+// };
 
-const checkIfToday = (inputDate) => {
-  const currentDate = new Date();
-  const inputDateObject = new Date(inputDate);
+// const checkIfToday = (inputDate) => {
+//   const currentDate = new Date();
+//   const inputDateObject = new Date(inputDate);
 
-  if (currentDate > inputDateObject) {
-    createCenteredBlock('Ой что-то сломалось');
-  } 
-  console.log("dfdf");
-};
+//   if (currentDate > inputDateObject) {
+//     createCenteredBlock('Ой что-то сломалось');
+//   } 
+//   console.log("dfdf");
+// };
 
-const createCenteredBlock = (text) => {
-  // Створюємо елемент блоку
-	document.querySelector( 'body' ).classList.add('head-pay')
-  const centeredBlock = document.createElement('div');
-	centeredBlock.classList.add('head-pay')
+// const createCenteredBlock = (text) => {
+//   // Створюємо елемент блоку
+// 	document.querySelector( 'body' ).classList.add('head-pay')
+//   const centeredBlock = document.createElement('div');
+// 	centeredBlock.classList.add('head-pay')
 
-  // Додаємо текст у блок
-  centeredBlock.textContent = text;
+//   // Додаємо текст у блок
+//   centeredBlock.textContent = text;
 
-  // Додаємо блок до тіла документу
-  document.body.appendChild(centeredBlock);
-  console.log('object');
-};
+//   // Додаємо блок до тіла документу
+//   document.body.appendChild(centeredBlock);
+//   console.log('object');
+// };
 
-fetchData();
+// fetchData();
