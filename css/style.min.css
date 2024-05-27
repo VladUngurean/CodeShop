@@ -31,7 +31,7 @@ aside {
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smoot;
 }
 html,
 body {
@@ -3351,6 +3351,13 @@ main {
   position: relative;
   height: 300px;
   overflow: hidden;
+}
+.card__imgBx img {
+  transition: transform 0.3s;
+}
+.card__imgBx:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s;
 }
 @media (max-width: 460px) {
   .card__imgBx {
