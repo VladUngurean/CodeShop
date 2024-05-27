@@ -2,28 +2,32 @@
 @font-face {
   font-family: Itim;
   font-display: swap;
-  src: url("../fonts/Itim-Regular.woff2") format("woff2"), url("../fonts/Itim-Regular.woff") format("woff");
+  src: url("../fonts/Itim-Regular.woff2") format("woff2"),
+    url("../fonts/Itim-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -163,7 +167,7 @@ main {
   min-height: 700px;
 }
 
-[class*=__container] {
+[class*="__container"] {
   max-width: 1440px;
   margin: 0 auto;
   padding: 10px;
@@ -305,7 +309,8 @@ main {
   background-color: var(--color-white);
   cursor: pointer;
 }
-.back-to-top::before, .back-to-top::after {
+.back-to-top::before,
+.back-to-top::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -918,7 +923,7 @@ main {
   color: var(--color-dark);
 }
 .accordion__icon {
-  background: url("../img/arrow-down.png") 0 0/cover no-repeat;
+  background: url("../img/arrow-down.png") 0 0 / cover no-repeat;
   width: 15px;
   height: 15px;
   transition: transform 0.5s ease 0s;
@@ -1031,7 +1036,8 @@ main {
 .popup__close:hover {
   cursor: pointer;
 }
-.popup__close::after, .popup__close::before {
+.popup__close::after,
+.popup__close::before {
   position: absolute;
   content: "";
   display: block;
@@ -1612,7 +1618,10 @@ main {
   height: 100%;
   z-index: 1;
   transition-property: transform;
-  transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+  transition-timing-function: var(
+    --swiper-wrapper-transition-timing-function,
+    initial
+  );
   box-sizing: content-box;
 }
 
@@ -1679,7 +1688,8 @@ main {
   margin-right: 15px;
   position: relative;
 }
-.select__icon::after, .select__icon::before {
+.select__icon::after,
+.select__icon::before {
   content: "";
   position: absolute;
   width: 2px;
@@ -1762,12 +1772,16 @@ main {
 @font-face {
   font-family: "icons";
   src: url("../files/fonts-icons/icons.eot?uo998u");
-  src: url("../files/fonts-icons/icons.eot?uo998u#iefix") format("embedded-opentype"), url("../files/fonts-icons/icons.ttf?uo998u") format("truetype"), url("../files/fonts-icons/icons.woff?uo998u") format("woff"), url("../files/fonts-icons/icons.svg?uo998u#icons") format("svg");
+  src: url("../files/fonts-icons/icons.eot?uo998u#iefix")
+      format("embedded-opentype"),
+    url("../files/fonts-icons/icons.ttf?uo998u") format("truetype"),
+    url("../files/fonts-icons/icons.woff?uo998u") format("woff"),
+    url("../files/fonts-icons/icons.svg?uo998u#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-[class^=_icon-],
+[class^="_icon-"],
 [class*=" _icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icons" !important;
@@ -1934,7 +1948,8 @@ main {
   color: green;
   margin-top: 10px;
 }
-.cart-content__top, .cart-content__bottom {
+.cart-content__top,
+.cart-content__bottom {
   padding: 20px;
   padding-right: 16px;
 }
@@ -2426,10 +2441,12 @@ main {
     margin-top: calc(10px + 10 * (100vw - 320px) / 910);
   }
 }
-.reviews__send-form .name-input:nth-child(1), .reviews__send-form .name-input:nth-child(2) {
+.reviews__send-form .name-input:nth-child(1),
+.reviews__send-form .name-input:nth-child(2) {
   flex: 0 0 49%;
 }
-.reviews__send-form .name-input:nth-child(3), .reviews__send-form .name-input:nth-child(4) {
+.reviews__send-form .name-input:nth-child(3),
+.reviews__send-form .name-input:nth-child(4) {
   flex: 0 0 100%;
 }
 .reviews__send-form .form__text {
@@ -2437,7 +2454,8 @@ main {
   min-height: 150px;
 }
 @media (max-width: 685px) {
-  .reviews__send-form .name-input:nth-child(1), .reviews__send-form .name-input:nth-child(2) {
+  .reviews__send-form .name-input:nth-child(1),
+  .reviews__send-form .name-input:nth-child(2) {
     flex: 0 0 100%;
   }
 }
@@ -3039,15 +3057,18 @@ main {
 }
 
 .dot-pulse__dot {
-  animation: pulse var(--uib-speed) ease-in-out calc(var(--uib-speed) * 0.125) infinite both;
+  animation: pulse var(--uib-speed) ease-in-out calc(var(--uib-speed) * 0.125)
+    infinite both;
 }
 
 .dot-pulse::after {
-  animation: pulse var(--uib-speed) ease-in-out calc(var(--uib-speed) * 0.25) infinite;
+  animation: pulse var(--uib-speed) ease-in-out calc(var(--uib-speed) * 0.25)
+    infinite;
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(0);
   }
   50% {
@@ -3458,7 +3479,11 @@ main {
 .bottom-more {
   position: absolute;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(255, 255, 255) 80%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255) 80%
+  );
   width: 100%;
   height: 60px;
   opacity: 1;

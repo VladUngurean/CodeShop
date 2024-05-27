@@ -43,14 +43,14 @@ if ( productsContainer ) {
 
 					const productHTML = `<a  ${cardLinkAttributes} data-name="${item.miniTitle}" data-id="${item.id}">
 							<div class="card__imgBx">
-									<img src="${item.imgProduct}" alt="${item.title}">
+									<img loading="lazy" src="${item.imgProduct}" alt="${item.title}">
 									${saleHTML}
 							</div>
 							<div class="card__content">
 									<h2 class="card__content-title">${item.title}</h2>
 									<div class="card__content-price card-price">
-											<span class="card-price__new">${item.price} <span>MDL</span></span>
-											<span class="card-price__old">${item.oldPrice}<span>MDL</span></span>
+										<span class="card-price__old">${item.oldPrice}<span>MDL</span></span>
+										<span class="card-price__new">${item.price} <span>MDL</span></span>
 									</div>
 									
 									${buttonHTML}
@@ -87,14 +87,14 @@ if ( productsContainer ) {
 
 					const productHTML = `<a  ${cardLinkAttributes} data-name="${item.miniTitle}"  data-id="${item.id}">
 							<div class="card__imgBx">
-									<img src="${item.imgProduct}" alt="${item.title}">
+									<img loading="lazy" src="${item.imgProduct}" alt="${item.title}">
 									${saleHTML}
 							</div>
 							<div class="card__content">
 									<h2 class="card__content-title">${item.title}</h2>
 									<div class="card__content-price card-price">
-											<span class="card-price__new">${item.price} <span>MDL</span></span>
-											<span class="card-price__old">${item.oldPrice}<span>MDL</span></span>
+										<span class="card-price__old">${item.oldPrice}<span>MDL</span></span>
+										<span class="card-price__new">${item.price} <span>MDL</span></span>
 									</div>
 									
 									${buttonHTML}
@@ -157,14 +157,14 @@ if ( productsContainerSale ) {
 
 					const productHTML = `<a  ${cardLinkAttributes} data-name="${item.miniTitle}" data-id="${item.id}">
 							<div class="card__imgBx">
-									<img src="${item.imgProduct}" alt="${item.title}">
+									<img loading="lazy" src="${item.imgProduct}" alt="${item.title}">
 									${saleHTML}
 							</div>
 							<div class="card__content">
 									<h2 class="card__content-title">${item.title}</h2>
 									<div class="card__content-price card-price">
-											<span class="card-price__new">${item.price} <span>MDL</span></span>
-											<span class="card-price__old">${item.oldPrice}<span>MDL</span></span>
+										<span class="card-price__old">${item.oldPrice}<span>MDL</span></span>
+										<span class="card-price__new">${item.price} <span>MDL</span></span>
 									</div>
 									
 									${buttonHTML}
@@ -196,14 +196,14 @@ if ( productsContainerSale ) {
 
 						const productHTML = `<a  ${cardLinkAttributes} data-name="${item.miniTitle}" data-id="${item.id}">
 								<div class="card__imgBx">
-										<img src="${item.imgProduct}" alt="${item.title}">
+										<img loading="lazy" src="${item.imgProduct}" alt="${item.title}">
 										${saleHTML}
 								</div>
 								<div class="card__content">
 										<h2 class="card__content-title">${item.title}</h2>
 										<div class="card__content-price card-price">
-												<span class="card-price__new">${item.price} <span>MDL</span></span>
-												<span class="card-price__old">${item.oldPrice}<span>MDL</span></span>
+											<span class="card-price__old">${item.oldPrice}<span>MDL</span></span>
+											<span class="card-price__new">${item.price} <span>MDL</span></span>
 										</div>
 										
 										${buttonHTML}
@@ -317,7 +317,7 @@ if (document.querySelector('.main__slider')) {
 				let contentLenta = document.querySelector( '.tabs__content-images ');
 				for (let i = 0; i < el.imagesLenta.length; i++) {
 					let itemHtml = `
-					<img src="${el.imagesLenta[i]}" alt="${el.title}" class="content-images-item" />`;
+					<img loading="lazy" src="${el.imagesLenta[i]}" alt="${el.title}" class="content-images-item" />`;
 					contentLenta.insertAdjacentHTML('beforeend', itemHtml);
 				}
 				//Встановлюємо характкристику товару
@@ -351,7 +351,7 @@ if (document.querySelector('.main__slider')) {
 				}
 				
 			}
-			// <img src="${el.reviews[i].imgPeople}" alt="" class="reviews-item__img" />
+			// <img loading="lazy" src="${el.reviews[i].imgPeople}" alt="" class="reviews-item__img" />
 		})
 		// Функція вираховує оцінки у відгуках та додає зірки
 		const titleProductPage = document.querySelector( '.discription__title' );
@@ -453,7 +453,7 @@ if (document.querySelector('.main__slider')) {
 			} );
 			// Додайте ваші слайди на основі отриманих даних
 			data[0].images.forEach(item => {
-				mainSlider.appendSlide('<div class="swiper-slide"> <img src='+ item +' alt=' + data[0].title +' /></div>');
+				mainSlider.appendSlide('<div class="swiper-slide"> <img loading="lazy" src='+ item +' alt=' + data[0].title +' /></div>');
 			
 			
 			});
@@ -462,7 +462,7 @@ let previewSlider = document.querySelector( '.cards-slider__nav ');
 for (let i = 0; i < data[0].images.length; i++) {
 	let slideForPreviewSlider = `
 		<div class="slider-nav__item" tabindex="0">
-			<img src="${data[0].images[i]}" alt="${data[0].title}" />
+			<img loading="lazy" src="${data[0].images[i]}" alt="${data[0].title}" />
 		</div>`;
 	previewSlider.insertAdjacentHTML('beforeend', slideForPreviewSlider);
 }
@@ -491,7 +491,7 @@ for (let i = 0; i < data[0].images.length; i++) {
 // for (let i = 0; i < el.images.length; i++) {
 // 	let slideForBigSlider = `
 // 		<div class="swiper-slide">
-// 			<img src="${el.images[i]}" alt="${el.title}" />
+// 			<img loading="lazy" src="${el.images[i]}" alt="${el.title}" />
 // 		</div>`
 // 	bigSlider.insertAdjacentHTML('beforeend', slideForBigSlider);
 // }
