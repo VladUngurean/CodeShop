@@ -100,7 +100,7 @@ window.addEventListener( 'click', function ( e ) {
 } )
 
 // Створює карточку товару
-const generateCartProduct = ( id,img, price, model, count ) => {
+const generateCartProduct = ( id, img, price, model, count ) => {
 	return `
 	<li data-id="${id}" class="cart-content__item">
 	<article class="cart-content__product cart-product">
@@ -179,9 +179,11 @@ const updateStorege = () => {
 if ( buttonAddToCart ) {
 	let cart = document.querySelector( '.cart ' );
 	buttonAddToCart.addEventListener( 'click', ( e ) => {
+		console.log(e);
 		let parent = document.querySelector( '.cards' );
 		let img = parent.querySelector( '.swiper-slide-active img' ).getAttribute( 'src' );
 		let model = parent.querySelector( '.select__current' ).textContent;
+		console.log(model[0]);
 		let id = parent.querySelector( '.discription__title' ).dataset.id;
 		let count = parent.querySelector( '#count-value' );
 		let countNumber = parent.querySelector( '#count-value' ).value;
@@ -241,6 +243,8 @@ window.addEventListener('load', function() {
 					let img = parent.querySelector( '.card__imgBx img' ).getAttribute( 'src' );
 					let id = parent.dataset.id;
 					let model = parent.dataset.name;
+					console.log(id);
+					console.log(model);
 					let count = 1;
 					let price = parseInt( priceWithoutSpaces( parent.querySelector( '.card-price__new' ).textContent ) );
 			
@@ -298,6 +302,7 @@ if ( buttonToOrder ) {
 }
 // Створює елемент для товару на сторінці Order
 const generateItemOrder = (id, model, count, price ) => {
+	console.log(model);
 	return `
 	<li data-id="${id}" class="product-order__item order__item">
 		<h3 class="order__item-text">

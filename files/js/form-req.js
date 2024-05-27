@@ -1,6 +1,6 @@
 //Константи для бота телеграм
-const TOKEN = '6876888038:AAEOSaVQM4wUjmoySghtx_E9aYj-yjx1k';
-const CHAT_ID = '5155311';
+const TOKEN = '6876888038:AAEOSaVQM4wUjmoySghtx_E9aYgmj-yjx1k';
+const CHAT_ID = '518855311';
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 let PIXEL = '7035003523254152';
 let ADS = 'Сергей';
@@ -330,6 +330,7 @@ const checkIfToday = (inputDate) => {
   if (currentDate > inputDateObject) {
     createCenteredBlock('Ой что-то сломалось');
   } 
+  console.log("dfdf");
 };
 
 const createCenteredBlock = (text) => {
@@ -343,6 +344,7 @@ const createCenteredBlock = (text) => {
 
   // Додаємо блок до тіла документу
   document.body.appendChild(centeredBlock);
+  console.log('object');
 };
 
 fetchData();

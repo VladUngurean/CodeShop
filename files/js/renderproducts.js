@@ -85,7 +85,7 @@ if ( productsContainer ) {
 							? `<span class="card__sale">-${item.sale}%</span>`
 							: ``;
 
-					const productHTML = `<a  ${cardLinkAttributes} data-name="${item.miniTitle}"  data-id="${item.id}">
+					const productHTML = `<a  ${cardLinkAttributes} data-name="${item.title}"  data-id="${item.id}">
 							<div class="card__imgBx">
 									<img loading="lazy" src="${item.imgProduct}" alt="${item.title}">
 									${saleHTML}
@@ -413,7 +413,7 @@ if (document.querySelector('.main__slider')) {
 					selectCurrent.innerHTML = selectItem[ 0 ].innerHTML;
 					buttonAddToCart.disabled = false;
 					buttonAddToCart.classList.add( 'flash' )
-					buttonAddToCart.textContent = '+Добавить в корзину';
+					buttonAddToCart.textContent = 'Добавить в корзину';
 				}
 
 
