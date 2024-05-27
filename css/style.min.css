@@ -2,32 +2,32 @@
 @font-face {
   font-family: Itim;
   font-display: swap;
-  src: url("../fonts/Itim-Regular.woff2") format("woff2"),
-    url("../fonts/Itim-Regular.woff") format("woff");
+  src: url("fonts/Itim-Regular.woff2") format("woff2"),
+    url("fonts/Itim-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"),
-    url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"),
-    url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: Montserrat;
   font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: url("fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("fonts/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -225,7 +225,7 @@ main {
 
 .popup__load {
   height: 50px;
-  background-image: url("../img/load-buttom.gif");
+  background-image: url("img/load-buttom.gif");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -345,7 +345,7 @@ main {
 }
 
 .pay-and-delivery__body {
-  background-image: url("../img/bg10.png");
+  background-image: url("img/bg10.png");
   background-repeat: no-repeat;
   background-position: top center;
   height: 648px;
@@ -941,7 +941,7 @@ main {
   color: var(--color-dark);
 }
 .accordion__icon {
-  background: url("../img/arrow-down.png") 0 0 / cover no-repeat;
+  background: url("img/arrow-down.png") 0 0 / cover no-repeat;
   width: 15px;
   height: 15px;
   transition: transform 0.5s ease 0s;
@@ -1789,12 +1789,12 @@ main {
 
 @font-face {
   font-family: "icons";
-  src: url("../files/fonts-icons/icons.eot?uo998u");
-  src: url("../files/fonts-icons/icons.eot?uo998u#iefix")
+  src: url("files/fonts-icons/icons.eot?uo998u");
+  src: url("files/fonts-icons/icons.eot?uo998u#iefix")
       format("embedded-opentype"),
-    url("../files/fonts-icons/icons.ttf?uo998u") format("truetype"),
-    url("../files/fonts-icons/icons.woff?uo998u") format("woff"),
-    url("../files/fonts-icons/icons.svg?uo998u#icons") format("svg");
+    url("files/fonts-icons/icons.ttf?uo998u") format("truetype"),
+    url("files/fonts-icons/icons.woff?uo998u") format("woff"),
+    url("files/fonts-icons/icons.svg?uo998u#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -1871,7 +1871,7 @@ main {
 .cart-close {
   cursor: pointer;
   background-color: transparent;
-  background-image: url("../img/close.png");
+  background-image: url("img/close.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 13px;
@@ -2021,7 +2021,7 @@ main {
 .cart-product__delete {
   cursor: pointer;
   background-color: transparent;
-  background-image: url("../img/close.png");
+  background-image: url("img/close.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 13px;
@@ -2373,7 +2373,7 @@ main {
 .reviews__slider-btn {
   width: 50px;
   height: 50px;
-  background: url("../img/slider/arrow-slider.svg") center center no-repeat;
+  background: url("img/slider/arrow-slider.svg") center center no-repeat;
   background-size: contain;
   position: absolute;
   cursor: pointer;
@@ -2385,7 +2385,7 @@ main {
 }
 
 .swiper-button-disabled {
-  background: url("../img/slider/arrow-slider-dis.svg") center center no-repeat;
+  background: url("img/slider/arrow-slider-dis.svg") center center no-repeat;
   background-size: contain;
 }
 
@@ -2425,7 +2425,7 @@ main {
 .reviews__slider-photo {
   width: 60px;
   height: 60px;
-  background-image: url("../img/reviews/reviews.png");
+  background-image: url("img/reviews/reviews.png");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
@@ -2689,7 +2689,7 @@ main {
 .content-text__item::after {
   content: "";
   position: absolute;
-  background-image: url("../img/check.svg");
+  background-image: url("img/check.svg");
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -3199,7 +3199,7 @@ main {
 .back__page span {
   width: 25px;
   height: 25px;
-  background: url("../img/left-arrow.png") center center no-repeat;
+  background: url("img/left-arrow.png") center center no-repeat;
   background-size: contain;
   cursor: pointer;
 }
