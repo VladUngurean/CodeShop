@@ -312,7 +312,7 @@ main {
 }
 
 .pay-and-delivery__body {
-  background-image: url("img/bg10.png");
+  background-image: url("/img/bg10.png");
   background-repeat: no-repeat;
   background-position: top center;
   height: 648px;
